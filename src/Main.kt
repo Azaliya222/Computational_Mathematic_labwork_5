@@ -1,4 +1,4 @@
-import system.System2D
+import system.System3D
 import math.Vector
 import solver.SimpleIterationSolver
 import solver.Solver
@@ -8,7 +8,7 @@ import solver.ZeydelyaSolver
 private const val epsilon = 1e-3
 
 fun main() {
-    val system = System2D();
+    val system = System3D();
     val start = Vector(doubleArrayOf(1.0, 0.2, 0.4))
 
     val strategies: Map<Int, Solver> = mapOf(

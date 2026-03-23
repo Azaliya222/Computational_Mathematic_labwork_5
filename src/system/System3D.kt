@@ -2,7 +2,7 @@ package system
 
 import math.Vector
 
-class System2D : LinearSystem {
+class System3D : LinearSystem {
 
     override val dimension = 3
 
@@ -51,8 +51,10 @@ class System2D : LinearSystem {
     }
 
     override fun toString(): String {
-        return "F1(x, y) = x^2 + y^2 - xy - 7\n" +
-                "F2(x, y) = x - y - 1\n"
+        return  "F1(x, y, z) = -1.2x + (1/9)y - (5/8)z + 1.2\n" +
+                "F2(x, y, z) = -2x - 10y - (5/8)z + 21\n" +
+                "F3(x, y, z) = x - 0.5y + (2/5)z + 1"
+
     }
 
 }
